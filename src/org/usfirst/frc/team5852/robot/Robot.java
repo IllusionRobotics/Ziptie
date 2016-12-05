@@ -142,49 +142,7 @@ public class Robot extends IterativeRobot {
 				Timer.delay(13);
 				break;	
 			}
-		}
-		/*switch(mode)
-		
-		{
-		case 1:
-			
-			break;
-			
-		case 2:
-			while (isAutonomous() && isEnabled()){
-					
-				for (int i = 0; i < 70000; i++) {
-						drive.tankDrive(0.5, 0.5);
-				}
-					
-				Timer.delay(2);
-				for (int i = 0; i < 100000; i++){
-					drive.tankDrive(1, 1);
-				}
-				Timer.delay(13);
-			}
-			break;
-				
-		/*case 3:
-			while (isAutonomous() && isEnabled()){
-				/*for (int u = 0; u < 400; u++){
-					lift.set(-0.5);
-				}
-				Timer.delay(2);
-				
-				for (int i = 0; i < 70000; i++){
-					drive.tankDrive(0.5, 0.5);
-				}
-				Timer.delay(2);
-				
-				for (int i = 0; i < 100000; i++){
-					drive.tankDrive(0.5, 0.5);
-				}
-				Timer.delay(13);
-			}
-			break;
-		}*/
-		
+		}		
 	}
 
 	public void teleopInit() 
