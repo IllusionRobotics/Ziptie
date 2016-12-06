@@ -89,6 +89,7 @@ public class Robot extends IterativeRobot {
 			while (isAutonomous() && isEnabled())
 			{
 				
+				Thread.sleep(15000);
 				break;
 				
 			}
