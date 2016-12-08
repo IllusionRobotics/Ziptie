@@ -89,7 +89,6 @@ public class Robot extends IterativeRobot {
 			while (isAutonomous() && isEnabled())
 			{
 				
-				Thread.sleep(15000);
 				break;
 				
 			}
@@ -100,6 +99,17 @@ public class Robot extends IterativeRobot {
 			//Ramparts, Rock Wall, and Rough Terrain Autonomous
 			while (isAutonomous() && isEnabled())
 			{
+				while (Timer.getMatchTime() < 3)
+				{
+					drive.tankDrive(0.5, 0.5);
+				}
+				Timer.delay(2);
+				while (Timer.getMatchTime() > 5 && Timer.getMatchTime() < 10)
+				{
+					drive.tankDrive(1, 1);
+				}
+				Timer.delay(5);
+				/*
 				//Approaches Obstacle at Half Speed
 				for (int i = 0; i < 80000; i++) 
 				{
@@ -112,7 +122,7 @@ public class Robot extends IterativeRobot {
 					drive.tankDrive(1, 1);
 				}
 				//Delays the Autonomous for the Rest of the Autonomous Period and Breaks the Loop
-				Timer.delay(13);
+				Timer.delay(13);*/
 				
 				break;
 			}
